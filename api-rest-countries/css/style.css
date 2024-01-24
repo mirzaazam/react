@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.createEl {
+    border: 4px solid gold;
+    padding: 10px;
+
+}
+
+.createEl img {
+    max-width: 200px;
+}
+
+.createEl h2 {
+    color: green;
+}
