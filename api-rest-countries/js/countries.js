@@ -16,7 +16,6 @@ const eachData = (countries) => {
         <h2>${country.name.common}</h2> 
         <img src="${country.flags.png}"></img>
         `
-        console.log(country);
         container.appendChild(creatEl);
     })
 }
