@@ -16,6 +16,7 @@ const eachData = (countries) => {
         ` 
         <h2>${country.name.common}</h2> 
         <p class="population">Population: ${country.population}</p>
+        <p class="population">Continents: ${country.continents[0]}</p>
         <img src="${country.flags.png}"></img>
         `
         container.appendChild(creatEl);
