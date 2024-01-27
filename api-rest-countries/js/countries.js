@@ -6,6 +6,7 @@ const loadData = () => {
 }
 
 const eachData = (countries) => {
+    console.log(countries)
     countries.map(country => {
         const container = document.getElementById('contriesContainer');
         container.classList.add('container');
@@ -14,6 +15,7 @@ const eachData = (countries) => {
         creatEl.innerHTML= 
         ` 
         <h2>${country.name.common}</h2> 
+        <p class="population">Population: ${country.population}</p>
         <img src="${country.flags.png}"></img>
         `
         container.appendChild(creatEl);

@@ -17,3 +17,7 @@
 .createEl h2 {
     color: green;
 }
+
+.population {
+    color: forestgreen;
+}
