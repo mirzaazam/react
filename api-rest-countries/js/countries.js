@@ -18,6 +18,7 @@ const eachData = (countries) => {
         <p class="population">Population: ${country.population}</p>
         <p class="population">Continents: ${country.continents[0]}</p>
         <p class="population">capital: ${country.capital[0]}</p>
+        <p class="population">language: ${country.languages.eng}</p>
         <img src="${country.flags.png}"></img>
         `
         container.appendChild(creatEl);
