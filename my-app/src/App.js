@@ -11,15 +11,10 @@ function App() {
       <Person></Person>
       <AnotherFunction></AnotherFunction>
       <AnotherFunction></AnotherFunction>
+      <Props  phone="01790-656506" address=" Hatiya-Noakhali"></Props>
+      <Props phone="01518-678458" address = ' Dhaka'></Props>
     </div>
   );
-}
-
-const style = {
-  backgrounColor: 'purple',
-  Color: 'green',
-  border: '1px solid red',
-  margin: '20px'
 }
 
 function Person() {
@@ -33,11 +28,22 @@ function Person() {
 
 function AnotherFunction() {
   return (
-    <div className= {style}>
+    <div className='person'>
       <h1>Rifat Hossain</h1>
-      <h3>Studednt</h3>
+      <h3>Student</h3>
     </div>
   )
 }
 
+function Props(props) {
+  console.log(props);
+    return (
+    <div className='person'>
+        <h3>Name: Mirza Azam</h3>
+        <p>Profession: Web Developer</p>
+        <p>Phone: {props.phone}</p>
+        <p>Adress:{props.address}</p>
+    </div>
+  )
+}
 export default App;
