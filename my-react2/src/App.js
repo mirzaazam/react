@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Counter></Counter>
       <ExternalUsers></ExternalUsers>
+      
     </div>
   );
 }
@@ -36,6 +37,26 @@ function ExternalUsers() {
     .then(data => setUsers(data));
 
   }, []);
+
+  return(
+    <div>
+      <h1> External Users </h1>
+      <p>{users.length}</p>
+      {
+        users.map(user => <ShowDisplay name={user.company.name} email={user.email}></ShowDisplay>)
+      }
+    </div>
+  )
 }
+
+function ShowDisplay(props) {
+  return(
+    <div style={{border: '1px solid purple', margin: '20px'}}>
+      <h1>Name: {props.name} </h1>
+      <h1>Email: {props.email} </h1>
+    </div>
+  )
+}
+
 
 export default App;
