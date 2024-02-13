@@ -15,7 +15,7 @@ const DataCountries = () => {
      return (
         <div>
             {
-                Countries.map(country => <Country name={country.name.common} area={country.area} popultion={country.population} img={country.flags.png}></Country>)
+                Countries.map(country => <Country country = {country}></Country>)
             }
         </div>
     );

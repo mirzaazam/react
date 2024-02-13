@@ -3,14 +3,15 @@ import React from 'react';
 import './Country.css';
 
 const Country = (props) => {
-    
-    return (
+    const {name, popultion, area, flags} = props.country;
+    console.log(props.country.flags.png)
+     return (
         <div className='container'>
             
-            <h1>Country Name: {props.name}</h1>
-            <h1>Population: {props.popultion}</h1>
-            <h3 id='areaColor'>Area: {props.area}</h3>
-            <img src={props.img}></img>
+            <h1>Country Name: {name.common}</h1>
+            <h1>Population: {popultion}</h1>
+            <h3 id='areaColor'>Area: {area}</h3> 
+            <img src={flags.png}></img>
            
             
         </div>
