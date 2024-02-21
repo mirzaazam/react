@@ -3,6 +3,11 @@ import './Show_Api.css';
 
 const Show_Api = (props) => {
     const { name, id, age, phone } = props.person;
+
+    const AddToCart = (id) => {
+        console.log('item Added', id);
+    }
+    const GetAddToCart = () => AddToCart(id);
     
     return (
         <div className='container'>
@@ -10,6 +15,7 @@ const Show_Api = (props) => {
             <p>Id: {id} </p>
             <p>Age: {age} </p>
             <p>Phone: {phone} </p>
+            <button onClick={GetAddToCart}>Add To Cart</button>
         </div>
     );
 };
