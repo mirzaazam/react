@@ -1,9 +1,11 @@
 import React from 'react';
+import './Show_Api.css';
 
 const Show_Api = (props) => {
-   const  {name, id, age, phone} = props.person;
+    const { name, id, age, phone } = props.person;
+    
     return (
-        <div>
+        <div className='container'>
             <p>Name: {name} </p>
             <p>Id: {id} </p>
             <p>Age: {age} </p>
