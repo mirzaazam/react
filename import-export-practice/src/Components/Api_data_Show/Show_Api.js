@@ -1,6 +1,6 @@
 import React from 'react';
 import './Show_Api.css';
-import { AddToDB } from '../../Utillites/Addition/fakeDB';
+import { AddToDB, RemoveFromCart } from '../../Utillites/Addition/fakeDB';
 
 const Show_Api = (props) => {
     // console.log(props);
@@ -9,6 +9,7 @@ const Show_Api = (props) => {
         AddToDB(id);
     }
     const GetAddToCart = () => AddToCart(id);
+    const DeleteFromDb = () => RemoveFromCart(id);
 
     return (
         <div className='container'>
@@ -17,6 +18,7 @@ const Show_Api = (props) => {
             <p>Age: {age} </p>
             <p>Phone: {phone} </p>
             <button onClick={GetAddToCart}>Add To Cart</button>
+            <button onClick={DeleteFromDb}>Remove</button>
         </div>
     );
 };
