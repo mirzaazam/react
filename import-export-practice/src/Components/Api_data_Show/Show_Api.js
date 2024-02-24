@@ -1,14 +1,15 @@
 import React from 'react';
 import './Show_Api.css';
+import { AddToDB } from '../../Utillites/Addition/fakeDB';
 
 const Show_Api = (props) => {
-    const { name, id, age, phone } = props.person;
-
+    // console.log(props);
+    const { name, id, age, phone } = props.person; // distracturing 
     const AddToCart = (id) => {
-        console.log('item Added', id);
+        AddToDB(id);
     }
     const GetAddToCart = () => AddToCart(id);
-    
+
     return (
         <div className='container'>
             <p>Name: {name} </p>
