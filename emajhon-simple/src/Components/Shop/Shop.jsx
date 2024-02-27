@@ -4,22 +4,29 @@ import Product from '../Product/Product';
 const Shop = () => {
 
     const [products, setProducts] = useState([]); 
-
+    const [cart, setCart] = useState([]);
+    
     useEffect(() => {
         fetch('../../../public/products.json')
-            .then(res => res.json())
-            .then(data => setProducts(data));
+        .then(res => res.json())
+        .then(data => setProducts(data));
     }, []);
+    
+    const loadCardData = (product) =>{
+        const newCart = [...cart, product];
+        setCart(newCart);
+    }
     
     return (
         <div className='shop-container'>
             <div className='product-container'>
                 {
-                    products.map(product => <Product key={product.id} product={product}></Product>)
+                    products.map(product => <Product loadCardData = {loadCardData} key={product.id} product={product}></Product>)
                 }
             </div>
-            <div>
+            <div className='order-summary'>
                 <h4>Order summary</h4>
+                <h6>Selected Item: {}</h6>
             </div>
         </div>
     );

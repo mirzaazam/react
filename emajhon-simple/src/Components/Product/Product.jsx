@@ -3,6 +3,7 @@ import './Product.css';
 
 const Product = (props) => {
     const { img, id, name, price, ratings, seller } = props.product;
+    const loadCardData = props.loadCardData;
     return (
         <div className='product-card'>
             <div className='img-info'>
@@ -18,7 +19,7 @@ const Product = (props) => {
             </div>
 
             <div>
-                <button className='btn'>Add to cart</button>
+                <button onClick={() => loadCardData(props.product)} className='btn'>Add to cart</button>
             </div>
         </div>
     );
