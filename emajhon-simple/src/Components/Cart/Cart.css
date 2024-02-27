@@ -1,0 +1,14 @@
+.product-summary{
+    background-color:  #e0d88e;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.product-summary p{
+    font-weight: 600;
+}
+
+.product-summary h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
