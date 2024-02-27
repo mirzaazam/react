@@ -5,7 +5,7 @@ const Shop = () => {
 
     const [products, setProducts] = useState([]); 
     const [cart, setCart] = useState([]);
-    
+
     useEffect(() => {
         fetch('../../../public/products.json')
         .then(res => res.json())
@@ -26,7 +26,7 @@ const Shop = () => {
             </div>
             <div className='order-summary'>
                 <h4>Order summary</h4>
-                <h6>Selected Item: {}</h6>
+                <h5>Selected Item: {cart.length} </h5>
             </div>
         </div>
     );
