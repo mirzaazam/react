@@ -2,6 +2,8 @@
     background-color:  #e0d88e;
     padding: 20px;
     border-radius: 6px;
+    position: sticky;
+    top: 10px;
 }
 
 .product-summary p{
