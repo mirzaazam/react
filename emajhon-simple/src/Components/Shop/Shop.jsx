@@ -16,6 +16,7 @@ const Shop = () => {
 
     useEffect(() => {
         const storedCart = getShoppingCart();
+        const saveCart = [];
         //step 1: get id of the added product
         for (const id in storedCart) {
             //step 2: get product from products using state by id
@@ -24,8 +25,10 @@ const Shop = () => {
             // step 3: add quantity
                 const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
+            //step 4: added produt to the save cart
+                saveCart.push(addedProduct);    
             }
-            console.log(addedProduct);
+            setCart(saveCart);
         }
 
     }, [products]);
