@@ -1,0 +1,33 @@
+ img {
+     max-width: 100px;
+     text-align: left;
+ }
+
+ .players-ln{
+    position: absolute;
+    content: '';
+    left: 11%;
+    top: 50%;
+    color: rgb(11, 105, 11);
+ }
+
+ .logo-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 80px;
+     background-color: #dad3d3;
+     position: relative;
+ }
+
+ .logo-container ul, a {
+     display: flex;
+     list-style: none;
+     text-decoration: none;
+     font-weight: 500;
+     color: purple;
+ }
+
+ li{
+    margin-left: 20px;
+ }
