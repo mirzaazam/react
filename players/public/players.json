@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Cristiano Ronaldo",
         "age": 39,
         "country": "portugal",
@@ -8,6 +9,7 @@
         "salary": 300000
     },
     {
+        "id": 2,
         "name": "Leonel Messi",
         "age": 35,
         "country": "Argentina",
@@ -16,6 +18,7 @@
         "salary": 1300000
     },
     {
+        "id": 3,
         "name": "Hakimi",
         "age": 29,
         "country": "Morocco",
@@ -24,6 +27,7 @@
         "salary": 340000
     },
     {
+        "id": 4,
         "name": "Mohammad Salah",
         "age": 28,
         "country": "Missor",
@@ -32,6 +36,7 @@
         "salary": 400000
     },
     {
+        "id": 5,
         "name": "Sadio Mane",
         "age": 29,
         "country": "Naigeria",
@@ -40,11 +45,30 @@
         "salary": 300000
     },
     {
+        "id": 6,
         "name": "Karim Benzema",
         "age": 30,
         "country": "France",
         "image": "./images/karim.jpg",
         "club": "Real Madrid",
         "salary": 200000
+    },
+    {
+        "id": 4,
+        "name": "Mohammad Salah",
+        "age": 28,
+        "country": "Missor",
+        "image": "./images/salah.jpg",
+        "club": "Liverpul",
+        "salary": 400000
+    },
+    {
+        "id": 5,
+        "name": "Sadio Mane",
+        "age": 29,
+        "country": "Naigeria",
+        "image": "./images/mane.jpg",
+        "club": "al nasser",
+        "salary": 300000
     }
 ]
