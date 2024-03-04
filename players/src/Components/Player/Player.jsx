@@ -2,7 +2,9 @@ import React from 'react';
 import './Player.css';
 
 const Player = (props) => {
-    const { image, club, age, country, name, salary } = props.player;
+    const { image, club, age, country, name, salary} = props.player;
+    const getPlayerInfo = props.getPlayerInfo;
+
     return (
         <div className='card'>
             <div>
@@ -19,7 +21,7 @@ const Player = (props) => {
             </div>
 
             <div>
-                <button className='btn'>Buy player</button>
+                <button onClick={() => getPlayerInfo(props.player)} className='btn'>Buy player</button>
             </div>
         </div>
     );
