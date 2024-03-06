@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "quantity": 1,
         "name": "Cristiano Ronaldo",
         "age": 39,
         "country": "portugal",
@@ -10,6 +11,7 @@
     },
     {
         "id": 2,
+        "quantity": 1,
         "name": "Leonel Messi",
         "age": 35,
         "country": "Argentina",
@@ -19,6 +21,7 @@
     },
     {
         "id": 3,
+        "quantity": 1,
         "name": "Hakimi",
         "age": 29,
         "country": "Morocco",
@@ -28,6 +31,7 @@
     },
     {
         "id": 4,
+        "quantity": 1,
         "name": "Mohammad Salah",
         "age": 28,
         "country": "Missor",
@@ -37,6 +41,7 @@
     },
     {
         "id": 5,
+        "quantity": 1,
         "name": "Sadio Mane",
         "age": 29,
         "country": "Naigeria",
@@ -46,6 +51,7 @@
     },
     {
         "id": 6,
+        "quantity": 1,
         "name": "Karim Benzema",
         "age": 30,
         "country": "France",
@@ -55,6 +61,7 @@
     },
     {
         "id": 7,
+        "quantity": 1,
         "name": "Mohammad Salah",
         "age": 28,
         "country": "Missor",
@@ -64,6 +71,7 @@
     },
     {
         "id": 8,
+        "quantity": 1,
         "name": "Sadio Mane",
         "age": 29,
         "country": "Naigeria",
