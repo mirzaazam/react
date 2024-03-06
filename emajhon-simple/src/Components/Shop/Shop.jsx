@@ -30,13 +30,12 @@ const Shop = () => {
             }
             setCart(saveCart);
         }
-
     }, [products]);
 
     const loadCardData = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
-        AddToDB(product.id)
+        AddToDB(product.id);
     }
 
     return (

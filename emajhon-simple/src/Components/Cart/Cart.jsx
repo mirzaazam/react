@@ -11,10 +11,8 @@ const Cart = (props) => {
         if (item.quantity === 0) {
             item.quantity = 1;
         }
-
         // //shortCut prosess
         // item.quantity = item.quantity || 1;
-
         total = total + item.price * item.quantity;
         shippingTotal = shippingTotal + item.shipping * item.quantity;
         quantity = quantity + item.quantity;
@@ -22,7 +20,7 @@ const Cart = (props) => {
     const tax = total * 7 / 100;
     const GrandTotal = total + shippingTotal + tax;
 
-    return (
+   return (
         <div className='product-summary'>
             <h3>Order summary</h3>
             <h4>Selected Item: {quantity} </h4>

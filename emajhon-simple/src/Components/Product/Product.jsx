@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css';
 
 const Product = (props) => {
-    const { img, id, name, price, ratings, seller } = props.product;
+    const { img, name, price, ratings, seller } = props.product;
     const loadCardData = props.loadCardData;
     return (
         <div className='product-card'>
