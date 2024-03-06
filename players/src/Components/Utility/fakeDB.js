@@ -1,24 +1,29 @@
 const AddToDB = (id) => {
-    let playerCart;
-    const stored = localStorage.getItem('player-cart');
+    let playerCart = getShoppingCart();
+    let quantity = playerCart[id];
 
-    if (stored) {
-        playerCart = JSON.parse(stored);
+    if (!quantity) {
+        playerCart[id] = 1
     }
     else {
-        playerCart = {};
-    }
-
-    const quality = playerCart[id];
-    if (quality) {
-        quality = quality + 1;
-        playerCart[id] = quality;
-    }
-    else {
-        playerCart[id] = 1;
+        quantity = quantity + 1;
+        playerCart[id] = quantity;
     }
 
     localStorage.setItem('player-cart', JSON.stringify(playerCart));
 }
 
-export {AddToDB};
+const getShoppingCart = () => {
+    let playerCart = {};
+    const stored = localStorage.getItem('player-cart');
+
+    if (stored) {
+        playerCart = JSON.parse(stored);
+    }
+    return playerCart;
+}
+
+export {
+    AddToDB,
+    getShoppingCart
+};
